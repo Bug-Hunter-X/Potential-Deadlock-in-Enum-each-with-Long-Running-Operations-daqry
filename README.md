@@ -1,0 +1,3 @@
+# Elixir Enum.each and Long-Running Operations
+
+This example demonstrates a potential issue when using `Enum.each` in Elixir with long-running operations inside the function.  If the operation within `Enum.each` takes a significant amount of time and might block other processes, it can lead to unexpected behavior, particularly when dealing with concurrency.  The included solution shows a more robust approach using tasks to avoid blocking the main process. 
